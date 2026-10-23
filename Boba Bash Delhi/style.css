@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Courier New", monospace;
+    text-align: center;
+}
+
+
+
+
+.screen {
+    width: 90%;
+    max-width: 900px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-size: 18px;
+    color: #cccccc;
+    line-height: 1.5;
+}
+.question {
+    margin-bottom: 30px;
+}
+
+.button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+.button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+.danger-button {
+    border-color: red;
+    color: red;
+}
+
+.danger-button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+.activity-box {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 25px;
+    border: 1px solid #444444;
+    background-color: #111111;
+
+    text-align: left;
+}
+
+
+
+
+#noticedText {
+    margin-top: 30px;
+    color: red;
+    font-size: 20px;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+.card {
+    padding: 25px;
+    background-color: #111111;
+    border: 1px solid #444444;
+    cursor: pointer;
+}
+
+
+.card:hover {
+    border-color: red;
+}
+.card h2 {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+.info-box {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 25px;
+    padding: 25px;
+    border-left: 3px solid red;
+    background-color: #111111;
+    text-align: left;
+}
+
+
+
+
+.progress-container {
+    width: 100%;
+    max-width: 600px;
+    height: 10px;
+    background-color: #222222;
+    margin: 30px auto;
+}
+
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+
+    background-color: red;
+}
+
+
+.profile {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border: 1px solid #444444;
+    background-color: #111111;
+    margin-top: 20px;
+}
+
+
+
+
+.profile p {
+    margin: 10px 0;
+}
+.flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.flow-item {
+    min-width: 280px;
+    padding: 15px 25px;
+    border: 1px solid #444444;
+    background-color: #111111;
+    color: white;
+}
+
+
+.arrow {
+    margin: 10px 0;
+    color: red;
+    font-size: 25px;
+}
+
+
+
+
+#deleteResult {
+    width: 100%;
+    max-width: 650px;
+
+    margin-top: 30px;
+}
+
+
+#deleteMessage {
+    color: red;
+    margin-top: 25px;
+}
+
+
+#deleteExplanation {
+    margin: 20px auto;
+}
+
+
+.final-text {
+    color: #888888;
+    margin: 8px 0;
+}
+
+
+
+#screen8 h1 {
+    color: red;
+}
+
+#exitMessage {
+    margin-top: 25px;
+    color: red;
+    font-size: 24px;
+}

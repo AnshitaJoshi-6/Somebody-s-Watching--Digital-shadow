@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somebody's Watching</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+    <div id="screen1" class="screen">
+        <h1>SOMEBODY'S WATCHING</h1>
+        <p>Something is watching your activity.</p>
+        <button onclick="showScreen(2)">ENTER</button>
+    </div>
+
+
+    <div id="screen2" class="screen hidden">
+        <h2>YOU ARE BEING WATCHED</h2>
+        <p>
+            Every click.<br>
+            Every movement.<br>
+            Every second.
+        </p>
+        <button onclick="showScreen(3)">CONTINUE</button>
+    </div>
+
+
+   
+    <div id="screen3" class="screen hidden">
+        <h2>YOUR ACTIVITY</h2>
+        <div class="activity-box">
+            <p>Mouse movements: <span id="mouseCount">0</span></p>
+            <p>Total clicks: <span id="clickCount">0</span></p>
+            <p>Time spent: <span id="timeCount">0</span> seconds</p>
+        </div>
+        <button onclick="showScreen(4)">CONTINUE</button>
+    </div>
+
+
+
+    <div id="screen4" class="screen hidden">
+        <h2>WE KNOW WHAT YOU DO</h2>
+        <p>
+            You clicked.<br>
+            You moved your mouse.<br>
+            You stayed here.
+        </p>
+        <button onclick="showScreen(5)">CONTINUE</button>
+    </div>
+
+
+   
+    <div id="screen5" class="screen hidden">
+        <h2>WHAT DO YOU WANT TO KNOW?</h2>
+        <div class="cards">
+            <div class="card" onclick="showInfo('Websites can collect information about your activity.')">
+                <h2>TRACKING</h2>
+            </div>
+            <div class="card" onclick="showInfo('Your clicks and interactions can reveal patterns about you.')">
+                <h2>YOUR DATA</h2>
+            </div>
+        </div>
+        <div id="infoBox" class="info-box hidden">
+            <p id="infoText"></p>
+        </div>
+        <button onclick="showScreen(6)">CONTINUE</button>
+    </div>
+
+
+  
+    <div id="screen6" class="screen hidden">
+        <h2>YOUR DIGITAL SHADOW</h2>
+        <p>
+            The more you interact,<br>
+            the more information you leave behind.
+        </p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <button onclick="showScreen(7)">CONTINUE</button>
+    </div>
+
+
+   
+    <div id="screen7" class="screen hidden">
+        <h2>CAN YOU DELETE IT?</h2>
+        <p>
+            Try to remove your digital footprint.
+        </p>
+        <button class="danger-button" onclick="showScreen(8)">
+            DELETE MY DATA
+        </button>
+    </div>
+
+
+   
+    <div id="screen8" class="screen hidden">
+        <h1>YOU CAN'T ESCAPE</h1>
+        <p>
+            Even after you leave...
+        </p>
+        <p id="exitMessage"></p>
+        <button onclick="exitWebsite()">EXIT</button>
+    </div>
+
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
